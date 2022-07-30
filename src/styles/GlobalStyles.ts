@@ -10,8 +10,8 @@ export default createGlobalStyle`
 }
 
 html, body, #root {
-  max-width: 100vh;
-  max-height: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
 
   width: 100%;
   height: 100%;

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Feed } from '../Feed';
+
 import {
   Container,
   Banner,
@@ -48,6 +50,8 @@ export function ProfilePage() {
             </span>
           </Followage>
         </ProfileData>
+
+        <Feed />
       </Container>
     </div>
   )
