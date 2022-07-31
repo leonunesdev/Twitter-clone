@@ -1,4 +1,9 @@
+import React from 'react';
+import StickyBox from 'react-sticky-box';
+
 import { List } from '../List';
+import { FollowSuggestion } from '../FollowSuggestion';
+import { News } from '../News';
 
 import {
   Container,
@@ -17,14 +22,39 @@ export function SideBar() {
         <SearchIcon />
       </SearchWrapper>
 
-      <Body>
-        <List
-          title="Talvez você curta"
-          elements={[
-            <h1>Test</h1>
-          ]}
-        />
-      </Body>
+      <StickyBox>
+        <Body>
+          <List
+            title="Talvez você curta"
+            elements={[
+              <FollowSuggestion
+                name="Ricardo Nunes"
+                nickname="@ricardonunes"
+              />,
+              <FollowSuggestion
+                name="Wanderson Nunes"
+                nickname="@wandersonnunes"
+              />,
+              <FollowSuggestion
+                name="Alexandre Nunes"
+                nickname="@alexandrenunes"
+              />
+            ]}
+          />
+          <List
+            title="Talvez você curta"
+            elements={[<News />, <News />, <News />]}
+          />
+          <List
+            title="Talvez você curta"
+            elements={[<News />, <News />, <News />]}
+          />
+          <List
+            title="Talvez você curta"
+            elements={[<News />, <News />, <News />]}
+          />
+        </Body>
+      </StickyBox>
     </Container>
   )
 }
