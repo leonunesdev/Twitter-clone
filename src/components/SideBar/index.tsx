@@ -1,4 +1,3 @@
-import React from 'react';
 import StickyBox from 'react-sticky-box';
 
 import { List } from '../List';

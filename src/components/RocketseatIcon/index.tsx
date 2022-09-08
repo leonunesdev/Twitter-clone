@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function RocketseatIcon(props) {
   return (
     <svg width="1em" height="1em" viewBox="0 0 41 41" fill="none" {...props}>
@@ -10,5 +8,5 @@ export function RocketseatIcon(props) {
         fill="#fff"
       />
     </svg>
-  );
-};
+  )
+}

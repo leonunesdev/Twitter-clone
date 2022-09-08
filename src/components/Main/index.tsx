@@ -35,5 +35,5 @@ export function Main() {
         <EmailIcon />
       </BottomMenu>
     </Container >
-  );
-};
+  )
+}
